@@ -1,6 +1,6 @@
 <html>
     <head>
-        <title>Home</title>
+        <title>WAMO</title>
         <meta charset="UTF-8">
         <meta name="viewport" content="width=device-width, initial-scale=1.0">
         <link rel="preconnect" href="https://fonts.googleapis.com">
@@ -16,19 +16,72 @@
             <div class="shell">
                 <div class="header__inner">
                     <div class="logo">
+                        <a href="index.html">WAMO</a>
                     </div>
 
                     <nav class="nav">
                         <ul>
-                            <li><a href="index.html">Карта</a></li>
-                            <li><a href="about.html">Статистика</a></li>
-                            <li><a href="contact.html" class="locked">API достъп <i class="fa-solid fa-lock"></i></a></li>
+                            <li><a href="map.html">Карта</a></li>
+                            <li><a href="dashboard.html">Статистика</a></li>
+                            <li><a href="api.html" class="locked">API достъп <i class="fa-solid fa-lock"></i></a></li>
                             <li>Влез</li>
                         </ul>
                     </nav>
                 </div>
             </div>
         </header>
+
+        <div class="popup">
+            <div class="popup__reg">
+                <div class="popup__rHead">
+                    <h2>Регистрация</h2>
+                </div>
+
+                <div class="popup__rBody">
+                    <div class="popup__input">
+                        <input class="area" type="text" id="runame" name="runame" placeholder="Потребителско име">
+                    </div>
+                    <div class="popup__input">
+                        <input class="area" type="email" id="remail" name="remail" placeholder="Имейл">
+                    </div>
+                    <div class="popup__input">
+                        <input class="area" type="password" id="rpass" name="rpass" placeholder="Парола">
+                    </div>
+                </div>
+
+                <div class="popup__rActions">
+                    <button id="reg" class="btn">Регистрирай се</button>
+
+                    <p>Имам профил</p>
+
+                    <p>Назад</p>
+                </div>
+            </div>
+
+            <div class="popup__login">
+                <div class="popup__lHead">
+                    <h2>Вход</h2>
+                </div>
+
+                <div class="popup__lBody">
+                    <div class="popup__input">
+                        <input class="area" type="email" id="lemail" name="lemail" placeholder="Имейл">
+                    </div>
+
+                    <div class="popup__input">
+                        <input class="area" type="password" id="lpass" name="lpass" placeholder="Парола">
+                    </div>
+                </div>
+
+                <div class="popup__lActions">
+                    <button id="log" class="btn">Влез</button>
+
+                    <p>Нямам профил</p>
+
+                    <p>Назад</p>
+                </div>
+            </div>
+        </div>
 
         <section class="section-board">
             <div class="section__inner">
@@ -81,7 +134,7 @@
 
                                         <li>
                                             <p>Честота:</p>
-                                            <p>2Hrz</p>
+                                            <p>2Hz</p>
                                         </li>
                                     </ul>
                                 </div>
@@ -119,7 +172,7 @@
 
                                         <li>
                                             <p>Честота:</p>
-                                            <p>2Hrz</p>
+                                            <p>2Hz</p>
                                         </li>
                                     </ul>
                                 </div>
@@ -157,7 +210,7 @@
 
                                         <li>
                                             <p>Честота:</p>
-                                            <p>2Hrz</p>
+                                            <p>2Hz</p>
                                         </li>
                                     </ul>
                                 </div>
@@ -169,7 +222,7 @@
                         <li>
                             <div class="section__lHead">
                                 <figure class="section__lImg">
-                                    <img src="assets/images/sb.png" alt="">
+                                    <img src="assets/images/rover.png" alt="">
                                 </figure>
 
                                 <p>AmphiRover #1</p>
@@ -182,7 +235,7 @@
                                             <p><i class="fa-solid fa-temperature-half"></i>
                                                 <i class="fa-solid fa-water"></i></p>
 
-                                            <p>2Hrz</p>
+                                            <p>2Hz</p>
                                         </li>
 
                                         <li>
@@ -228,7 +281,7 @@
                         <li>
                             <div class="section__lHead">
                                 <figure class="section__lImg">
-                                    <img src="assets/images/sb.png" alt="">
+                                    <img src="assets/images/rover.png" alt="">
                                 </figure>
 
                                 <p>AmphiRover #2</p>
@@ -241,7 +294,7 @@
                                             <p><i class="fa-solid fa-temperature-half"></i>
                                                 <i class="fa-solid fa-water"></i></p>
 
-                                            <p>2Hrz</p>
+                                            <p>2Hz</p>
                                         </li>
 
                                         <li>
@@ -296,6 +349,7 @@
             </div>
         </footer>
 
+        <script src="assets/js/dashboard.js"></script>
         <script src="assets/js/script.js"></script>
     </body>
 </html>

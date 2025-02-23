@@ -1,0 +1,40 @@
+{
+    "rovers" : [
+        {
+            "id": 1,
+            "latitude": 43.191697,
+            "longitude": 27.792454,
+            "properties": {
+                "ph_value": 7.0,
+                "tds_value": 100,
+                "turbidity_value": 2,
+                "nitrate_value": 0.5,
+                "chloride_value": 0.5
+            }
+        },
+        {
+            "id": 2,
+            "latitude": 43.186242,
+            "longitude": 27.736143,
+            "properties": {
+                "ph_value": 7.0,
+                "tds_value": 100,
+                "turbidity_value": 2,
+                "nitrate_value": 0.5,
+                "chloride_value": 0.5
+            }
+        },
+        {
+            "id": 3,
+            "latitude": 42.500330,
+            "longitude": 27.402356,
+            "properties": {
+                "ph_value": 7.0,
+                "tds_value": 100,
+                "turbidity_value": 2,
+                "nitrate_value": 0.5,
+                "chloride_value": 0.5
+            }
+        }
+    ]
+}

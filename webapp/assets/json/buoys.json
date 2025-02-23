@@ -1,0 +1,37 @@
+{
+    "buoys": [
+        {
+            "id": 1,
+            "latitude": 43.174026,
+            "longitude": 27.916090,
+            "properties": {
+                "water_temperature": 22.5,
+                "sea_state": 2,
+                "wavelength": 38,
+                "wave_frequency": 0.5
+            }
+        },
+        {
+            "id": 2,
+            "latitude": 42.558142,
+            "longitude": 27.537508,
+            "properties": {
+                "water_temperature": 20,
+                "sea_state": 1,
+                "wavelength": 38,
+                "wave_frequency": 0.5
+            }
+        },
+        {
+            "id": 3,
+            "latitude": 42.433625,
+            "longitude": 27.515479,
+            "properties": {
+                "water_temperature": 20,
+                "sea_state": 1.5,
+                "wavelength": 38,
+                "wave_frequency": 0.5
+            }
+        }
+    ]
+}

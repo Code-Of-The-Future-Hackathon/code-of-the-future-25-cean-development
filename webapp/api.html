@@ -1,0 +1,115 @@
+<html>
+    <head>
+        <title>WAMO</title>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <link rel="preconnect" href="https://fonts.googleapis.com">
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+        <script src="https://kit.fontawesome.com/c0c3e05373.js" crossorigin="anonymous"></script>
+        <link href="https://fonts.googleapis.com/css2?family=Comfortaa:wght@300..700&display=swap" rel="stylesheet">
+        <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.7.1/jquery.min.js"></script>
+        <link rel="stylesheet" type="text/css" href="assets/css/style.css">
+    </head>
+
+    <body>
+        <header class="header">
+            <div class="shell">
+                <div class="header__inner">
+                    <div class="logo">
+                        <a href="index.html">WAMO</a>
+                    </div>
+
+                    <nav class="nav">
+                        <ul>
+                            <li><a href="map.html">Карта</a></li>
+                            <li><a href="dashboard.html">Статистика</a></li>
+                            <li><p>API достъп <i class="fa-solid fa-lock"></i></p></li>
+                            <li>Влез</li>
+                        </ul>
+                    </nav>
+                </div>
+            </div>
+        </header>
+
+        <div class="popup">
+            <div class="popup__reg">
+                <div class="popup__rHead">
+                    <h2>Регистрация</h2>
+                </div>
+
+                <div class="popup__rBody">
+                    <div class="popup__input">
+                        <input class="area" type="text" id="runame" name="runame" placeholder="Потребителско име">
+                    </div>
+                    <div class="popup__input">
+                        <input class="area" type="email" id="remail" name="remail" placeholder="Имейл">
+                    </div>
+                    <div class="popup__input">
+                        <input class="area" type="password" id="rpass" name="rpass" placeholder="Парола">
+                    </div>
+                </div>
+
+                <div class="popup__rActions">
+                    <button id="reg" class="btn">Регистрирай се</button>
+
+                    <p>Имам профил</p>
+
+                    <p>Назад</p>
+                </div>
+            </div>
+
+            <div class="popup__login">
+                <div class="popup__lHead">
+                    <h2>Вход</h2>
+                </div>
+
+                <div class="popup__lBody">
+                    <div class="popup__input">
+                        <input class="area" type="email" id="lemail" name="lemail" placeholder="Имейл">
+                    </div>
+
+                    <div class="popup__input">
+                        <input class="area" type="password" id="lpass" name="lpass" placeholder="Парола">
+                    </div>
+                </div>
+
+                <div class="popup__lActions">
+                    <button id="log" class="btn">Влез</button>
+
+                    <p>Нямам профил</p>
+
+                    <p>Назад</p>
+                </div>
+            </div>
+        </div>
+
+        <section class="section-api">
+            <div class="section__content">
+                <div class="section__head">
+                    <h1>API Token</h1>
+                </div>
+
+                <div class="section__action">
+                    <div class="section__input">
+                        <input class="area" type="text" id="token" name="token" placeholder="API Token" readonly>
+                    </div>
+
+                    <div class="section__btn">
+                        <button id="api" class="btn">Създай <i class="fa-solid fa-lock"></i></button>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <footer class="footer">
+            <div class="shell">
+                <div class="footer__inner">
+                    <p>&copyAll rights reserved 2025 - CEAN Development</p>
+                </div>
+            </div>
+        </footer>
+
+        <script src="assets/js/script.js"></script>
+        <script src="assets/js/api.js"></script>
+    </body>
+</html>

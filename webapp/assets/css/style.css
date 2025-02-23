@@ -24,6 +24,63 @@ h2 {
     font-size: 3.8rem;
 }
 
+/* area */
+
+.area {
+    width: 100%;
+    height: 4rem;
+    padding: 0 1rem;
+    font-family: "Comfortaa", serif;
+}
+
+::placeholder {
+    font-family: "Comfortaa", serif;
+}
+
+/* btn */
+
+.btn {
+    display: inline-block;
+    padding: 1rem 2rem;
+    border-radius: 1rem;
+    text-align: center;
+    text-decoration: none;
+    color: #fff;
+    background-color: #531ac4;
+    transition: background-color 0.3s;
+    border: none;
+    font-family: "Comfortaa", serif;
+    cursor: pointer;
+}
+
+/* logo */
+
+.logo {
+    font-size: 3.8rem;
+    font-family: "Comfortaa", serif;
+    position: relative;
+    line-height: 1;
+    z-index: 1;
+}
+
+.logo a {
+    color: #fff;
+    text-decoration: none;
+}
+
+.logo::after {
+    content: "wamo";
+    position: absolute;
+    top: 0;
+    left: 50%;
+    color: #fff;
+    transform: translateX(-50%);
+    line-height: 1;
+    filter: blur(0.2rem);
+    text-transform: uppercase;
+    z-index: -1;
+}
+
 /* shell */
 
 .shell {
@@ -45,6 +102,11 @@ h2 {
     justify-content: space-between;
     align-items: center;
     padding: 3rem 0;
+}
+
+.header--map {
+    background: rgb(83,26,196);
+    background: linear-gradient(180deg, rgba(83,26,196,1) 0%, rgba(83,26,196,0.84) 82%, rgba(83,26,196,0) 100%);
 }
 
 /* nav */
@@ -107,6 +169,127 @@ h2 {
     color: #fff;
     filter: blur(0.1rem);
     z-index: -1;
+}
+
+/* popup */
+
+.popup {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100vh;
+    background-color: rgba(0, 0, 0, 0.5);
+    z-index: 13;
+    display: none;
+}
+
+.popup .popup__reg,
+.popup .popup__login {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    background-color: #531ac4;
+    padding: 3rem;
+    border-radius: 1rem;
+    box-shadow: 0 0 1rem rgba(0, 0, 0, 0.1);
+    width: 40rem;
+}
+
+.popup .popup__reg {
+    display: none;
+}
+
+.popup .popup__reg h2,
+.popup .popup__login h2 {
+    color: #fff;
+    text-align: center;
+    margin-bottom: 2rem;
+    position: relative;
+    line-height: 1;
+}
+
+.popup .popup__reg h2:after {
+    content: "Регистрация";
+    position: absolute;
+    top: 0;
+    left: 50%;
+    transform: translateX(-50%);
+    line-height: 1;
+    filter: blur(0.2rem);
+}
+
+.popup .popup__login h2:after {
+    content: "Вход";
+    position: absolute;
+    top: 0;
+    left: 50%;
+    transform: translateX(-50%);
+    line-height: 1;
+    filter: blur(0.2rem);
+}
+
+.popup .popup__input {
+    border-radius: 1rem;
+    overflow: hidden;
+}
+
+.popup .popup__input + .popup__input {
+    margin-top: 1rem;
+}
+
+.popup .popup__rActions ,
+.popup .popup__lActions {
+    display: flex;
+    flex-direction: column;
+    margin-top: 1rem;
+}
+
+.popup .popup__rActions button,
+.popup .popup__lActions button {
+    position: relative;
+    list-style: 1;
+    z-index: 1;
+    cursor: pointer;
+    font-size: 1.6rem;
+}
+
+.popup .popup__rActions button::after {
+    content: "Регистрирай се";
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    color: #fff;
+    filter: blur(0.1rem);
+    z-index: -1;
+}
+
+.popup .popup__lActions button::after {
+    content: "Влез";
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    color: #fff;
+    filter: blur(0.1rem);
+    z-index: -1;
+}
+
+.popup .popup__rActions p,
+.popup .popup__lActions p {
+    color: #fff;
+    display: inline-block;
+    margin: 0 auto;
+    font-size: 1.4rem;
+    text-decoration: underline;
+    cursor: pointer;
+}
+
+.popup .popup__rActions p + p,
+.popup .popup__lActions p + p {
+    margin-top: 0.5rem;
 }
 
 /* hero */
@@ -493,9 +676,13 @@ h2 {
     flex: 0 0 calc(100% / 7);
 }
 
-.section-board .section__sb .section__lImg,
-.section-board .section__ar .section__lImg {
+.section-board .section__sb .section__lImg {
     width: 6rem;
+    margin: 0 auto 1rem;
+}
+
+.section-board .section__ar .section__lImg {
+    width: 10rem;
     margin: 0 auto 1rem;
 }
 
@@ -534,11 +721,6 @@ h2 {
      align-items: center;
      text-align: center;
 }
-
-
-
-
-
 
 
 .section-board .section__switch {
@@ -627,6 +809,73 @@ h2 {
     display: none;
 }
 
+/* section-map */
+
+.section-map {
+    height: 100vh;
+}
+
+.section-map .leaflet-container {
+    font-size: 1rem; 
+}
+
+/* section-api */
+
+.section-api {
+    height: 100vh;
+    background-color: #531ac4;
+    position: relative;
+}
+
+.section-api:after {
+    content: "";
+    position: absolute;
+    bottom: -0.1rem;
+    left: 0;
+    width: 100%;
+    height: 0.1rem;
+    background-color: #fff;
+}
+
+.section-api .section__content {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+}
+
+.section-api .section__head h1 {
+    color: #fff;
+    text-align: center;
+    margin-bottom: 2rem;
+    position: relative;
+    line-height: 1;
+}
+
+.section-api .section__head h1::after {
+    content: "API Token";
+    position: absolute;
+    top: 0;
+    left: 50%;
+    transform: translateX(-50%);
+    line-height: 1;
+    filter: blur(0.2rem);
+    text-align: center;
+    width: 100%;
+}
+
+.section-api .section__action {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-top: 2rem;
+}
+
+.section-api .section__input {
+    border-radius: 1rem;
+    overflow: hidden;
+    width: 23rem;
+}
 
 /* footer */
 
@@ -636,4 +885,13 @@ h2 {
     background-color: #531ac4;
     color: #f0f0f0;
     text-align: center;
+}
+
+.footer--map {
+    position: absolute;
+    bottom: 0;
+    width: 100%;
+    left: 0;
+    background: rgb(83,26,196);
+    background: linear-gradient(0deg, rgba(83,26,196,1) 0%, rgba(83,26,196,0.84) 82%, rgba(83,26,196,0) 100%);
 }
